@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:id="@+id/bottomLi"
+        android:layout_width="match_parent"
+        android:layout_height="707dp"
+        android:orientation="vertical">
+
+    <include
+            layout="@layout/main_toolbar"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoriesRV"
+        android:layout_width="match_parent"
+        android:layout_height="568dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="90dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/categoryrows" />
+
+    <LinearLayout
+        android:id="@+id/bottomL1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddCategory"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="7dp"
+            android:backgroundTint="#7c2855"
+            android:text="+ Add Category"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnAddItems"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="7dp"
+            android:backgroundTint="#7c2855"
+            android:text="+ Add Items"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="57dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/ic_help"
+            android:backgroundTint="#7c2855"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

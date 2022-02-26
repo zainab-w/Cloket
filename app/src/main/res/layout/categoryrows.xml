@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    http:contentPadding="10dp"
+    http:cardBackgroundColor="@color/white"
+    >
+
+    <LinearLayout
+        android:id="@+id/lr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/CategoryTV"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Category Name"
+            android:textColor="#7c2855" />
+        <TextView
+            android:id="@+id/CategoryLimitET"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="20dp"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_weight="0.3"
+            android:text="Limit"
+            android:textColor="#7c2855" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

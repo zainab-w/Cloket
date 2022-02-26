@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "27343099273",
+    "project_id": "opsc-cloket",
+    "storage_bucket": "opsc-cloket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27343099273:android:1adb25be820feeafdd7d58",
+        "android_client_info": {
+          "package_name": "com.example.cloket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27343099273-f3enfogm05g6qhd7agkc0t5vng7jcpnr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkw_WVZtlec94_8yRlhuW7pLbeAAoV_GI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27343099273-f3enfogm05g6qhd7agkc0t5vng7jcpnr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27343099273:android:86b578714bc3e519dd7d58",
+        "android_client_info": {
+          "package_name": "com.example.opsc_cloket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27343099273-f3enfogm05g6qhd7agkc0t5vng7jcpnr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkw_WVZtlec94_8yRlhuW7pLbeAAoV_GI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27343099273-f3enfogm05g6qhd7agkc0t5vng7jcpnr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
