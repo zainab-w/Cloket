@@ -1,15 +1,22 @@
-package com.example.cloket;
+package com.example.cloket.models;
 
 public class ModelCategory
 {
     String category;
-    String limit;
+    String goal;
+    String id;
 
     //constructor
-    public ModelCategory()
-    {
 
+    public ModelCategory() {
     }
+
+    public ModelCategory(String category, String goal, String id) {
+        this.category = category;
+        this.goal = goal;
+        this.id = id;
+    }
+
     public String getCategory() {
         return category;
     }
@@ -18,14 +25,19 @@ public class ModelCategory
         this.category = category;
     }
 
-    public String getLimit() {
-        return limit;
+    public String getGoal() {
+        return goal;
     }
 
-    public void setLimit(String limit) {
-        this.limit = limit;
+    public void setGoal(String goal) {
+        this.goal = goal;
     }
 
+    public String getId() {
+        return id;
+    }
 
-
+    public void setId(String id) {
+        this.id = id;
+    }
 }

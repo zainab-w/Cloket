@@ -1,4 +1,4 @@
-package com.example.cloket;
+package com.example.cloket.models;
 
 public class ItemsModel
 {

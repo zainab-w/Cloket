@@ -21,7 +21,7 @@ import java.util.HashMap;
 
 public class addCategory extends AppCompatActivity {
 
-    Button btnSubmitCateg;
+    Button btnSubmitCateg, cancelbtn;
     EditText categorynameET,categorylimitET;
 
     FirebaseAuth firebaseAuth;
@@ -29,11 +29,18 @@ public class addCategory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_category);
-
+        cancelbtn = findViewById(R.id.cancelbtn);
         btnSubmitCateg = findViewById(R.id.btnSubmitCategory);
         categorylimitET = findViewById(R.id.categoryLimitET);
         categorynameET = findViewById(R.id.categoryNameET);
         firebaseAuth = FirebaseAuth.getInstance();
+
+        cancelbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                backButton();
+            }
+        });
 
         btnSubmitCateg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +49,12 @@ public class addCategory extends AppCompatActivity {
             }
         });
     }
+
+    private void backButton()
+    {
+        startActivity(new Intent(addCategory.this, HomePage.class));
+    }
+
     String categoryName;
     String categorylimit;
     private void valiateData()
@@ -61,10 +74,12 @@ public class addCategory extends AppCompatActivity {
 
     private void addCategoryToFirebase()
     {
+        long timestamp = System.currentTimeMillis();
         categoryName = categorynameET.getText().toString().trim();
         categorylimit = categorylimitET.getText().toString().trim();
         HashMap<String, Object> hashMap = new HashMap<>();
 
+        hashMap.put("id","" + timestamp);
         hashMap.put("category","" + categoryName);
         hashMap.put("goal","" + categorylimit);
 
